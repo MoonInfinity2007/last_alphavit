@@ -19,7 +19,8 @@ def O(buf):
     buf[6] = buf[6] + "   #         #     "
     buf[7] = buf[7] + "    #       #      "
     buf[8] = buf[8] + "     # # # #       "
-    def Y(buf):
+
+def Y(buf):
     buf[0] = buf[0] + "##            ##  "
     buf[1] = buf[1] + " ##          ##   "
     buf[2] = buf[2] + "   ##      ##     "
@@ -197,16 +198,15 @@ def J(buf):
     buf[8] = buf[8] + "  # # # #         "
 
 def K(buf):
-    buf[0] = buf[0] + "   #            # "
-    buf[1] = buf[1] + "   #          #   "
-    buf[2] = buf[2] + "   #        #     "
-    buf[3] = buf[3] + "   #      #       "
-    buf[4] = buf[4] + "   # # # #        "
-    buf[5] = buf[5] + "   #       #      "
-    buf[6] = buf[6] + "   #         #    "
-    buf[7] = buf[7] + "   #           #  "
-    buf[8] = buf[8] + "   #             #"
-
+    buf[0] = buf[0] + "  #            #  "
+    buf[1] = buf[1] + "  #          #    "
+    buf[2] = buf[2] + "  #        #      "
+    buf[3] = buf[3] + "  #      #        "
+    buf[4] = buf[4] + "  # # # #         "
+    buf[5] = buf[5] + "  #       #       "
+    buf[6] = buf[6] + "  #         #     "
+    buf[7] = buf[7] + "  #           #   "
+    buf[8] = buf[8] + "  #             # "
 
 def L(buf):
     buf[0] = buf[0] + "   #              "
@@ -230,12 +230,24 @@ def E(buf):
     buf[7] = buf[7] +"    ##             "
     buf[8] = buf[8] +"    ###########    "
 
+def F(buf):
+    buf[0] = buf[0] +"    ###########    "
+    buf[1] = buf[1] +"    ##             "
+    buf[2] = buf[2] +"    ##             "
+    buf[3] = buf[3] +"    ##             "
+    buf[4] = buf[4] +"    ###########    "
+    buf[5] = buf[5] +"    ##             "
+    buf[6] = buf[6] +"    ##             "
+    buf[7] = buf[7] +"    ##             "
+    buf[8] = buf[8] +"    ##             "
+
 s = ["", "", "", "", "", "", "", "", ""]
 A(s)
 B(s)
 C(s)
 D(s)
 E(s)
+F(s)
 I(s)
 J(s)
 K(s)
@@ -252,4 +264,4 @@ W(s)
 X(s)
 Y(s)
 Z(s)
-*s, sep = "\n")
+print(*s, sep = "\n")
