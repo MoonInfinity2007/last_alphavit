@@ -208,7 +208,7 @@ def K(buf):
     buf[8] = buf[8] + "   #             #"
 
 
-def K(buf):
+def L(buf):
     buf[0] = buf[0] + "   #              "
     buf[1] = buf[1] + "   #              "
     buf[2] = buf[2] + "   #              "
@@ -219,11 +219,23 @@ def K(buf):
     buf[7] = buf[7] + "   #              "
     buf[8] = buf[8] + "   # # # # #      "
 
+def E(buf):
+    buf[0] = buf[0] +"    ###########    "
+    buf[1] = buf[1] +"    ##             "
+    buf[2] = buf[2] +"    ##             "
+    buf[3] = buf[3] +"    ##             "
+    buf[4] = buf[5] +"    ###########    "
+    buf[5] = buf[5] +"    ##             "
+    buf[6] = buf[6] +"    ##             "
+    buf[7] = buf[7] +"    ##             "
+    buf[8] = buf[8] +"    ###########    "
+
 s = ["", "", "", "", "", "", "", "", ""]
 A(s)
 B(s)
 C(s)
 D(s)
+E(s)
 I(s)
 J(s)
 K(s)
@@ -240,4 +252,4 @@ W(s)
 X(s)
 Y(s)
 Z(s)
-print(*s, sep = "\n")
+*s, sep = "\n")
